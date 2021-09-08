@@ -8,12 +8,14 @@
     android:layout_marginTop="@dimen/_5sdp">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_60sdp"
         app:civ_border_color="@color/color_black"
         app:civ_border_width="@dimen/_1sdp"
         android:src="@drawable/profile"/>
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUSername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/color_black"
