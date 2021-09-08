@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black"
+android:id="@+id/main">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="Instagram"
+        android:fontFamily="@font/lobsterregular"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_20sdp" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+       android:layout_marginRight="@dimen/_50sdp"
+            android:tint="@color/color_white"
+            android:src="@drawable/add"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/color_white"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/msg"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:src="@drawable/add_story" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfile"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Your Story"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivProfile"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="34"
+            tools:listitem="@layout/story_item" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/story"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/content_item" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@color/color_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+      app:itemIconTint="@color/color_white"
+        app:itemIconSize="@dimen/_25sdp"
+        app:menu="@menu/bottom_navmenu" />
+
+</RelativeLayout>
