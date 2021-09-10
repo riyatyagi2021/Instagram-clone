@@ -1,76 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.LoginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login">
+    android:background="@drawable/bg_login"
+    tools:context=".LoginActivity">
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginStart="@dimen/_20sdp"
-    android:layout_marginEnd="@dimen/_20sdp"
-    android:orientation="vertical">
-
-<androidx.appcompat.widget.AppCompatTextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:layout_marginTop="@dimen/_80sdp"
-    android:textColor="@color/color_black"
-android:fontFamily="@font/lobsterregular"
-    android:textSize="@dimen/_40sdp"
-    android:text="Instagram"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:textColor="@color/color_black"
-        android:textSize="@dimen/_20sdp"/>
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical">
 
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:textColor="@color/color_black"
-        android:textSize="@dimen/_20sdp"/>
-        <androidx.appcompat.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Instagram"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_40sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Username"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:textSize="@dimen/_14sdp"
-        android:textColor="@color/color_black"
-        android:layout_marginLeft="@dimen/_140sdp"
-        android:text="Forgot Password?"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Password"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
 
-<androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/btnLogin"
-    android:layout_width="match_parent"
-    android:layout_marginTop="@dimen/_30sdp"
-    android:layout_height="wrap_content"
-    android:text="Login"
-    android:textSize="@dimen/_20sdp"
-    android:textAllCaps="false"
-    android:textStyle="bold"
-   android:background="@drawable/bg_rectangle_corner"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:inputType="textWebPassword"
+            android:layout_height="wrap_content" />
 
 
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Forgot Password?"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/bg_rectangle_corner"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinnerTopics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="15dp"
+            android:entries="@array/topics" />
+
+        <Button
+            android:id="@+id/buttonSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribe" />
+
+    </LinearLayout>
 </ScrollView>

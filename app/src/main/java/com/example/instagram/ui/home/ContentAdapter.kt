@@ -1,4 +1,4 @@
-package com.example.instagram.ui
+package com.example.instagram.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,35 +8,35 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.instagram.R
 
-class ContentAdapter(private var List: List<ContentItem>):
+class ContentAdapter(private var list: List<ContentItem>):
     RecyclerView.Adapter<ContentAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view= LayoutInflater.from(parent.context).inflate(R.layout.content_item,parent,false)
+        var view= LayoutInflater.from(parent.context).inflate(R.layout.item_content_home,parent,false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.imageview1.setImageResource(List[position].iv1)
-        holder.tvName.text=List[position].tv1
-        holder.imageview2.setImageResource(List[position].iv2)
-        holder.imageview3.setImageResource(List[position].iv3)
-        holder.imageview4.setImageResource(List[position].iv4)
-        holder.imageview5.setImageResource(List[position].iv5)
-        holder.imageview6.setImageResource(List[position].iv6)
-        holder.imageview7.setImageResource(List[position].iv7)
-        holder.imageview8.setImageResource(List[position].iv8)
-        holder.imageview9.setImageResource(List[position].iv9)
-        holder.imageview10.setImageResource(List[position].iv10)
-        holder.tvName2.text=List[position].tv2
-        holder.tvName3.text=List[position].tv3
-        holder.tvName4.text=List[position].tv4
-        holder.imageview11.setImageResource(List[position].iv11)
-        holder.tvName5.text=List[position].tv5
-        holder.imageview12.setImageResource(List[position].iv12)
-        holder.imageview13.setImageResource(List[position].iv13)
-        holder.imageview14.setImageResource(List[position].iv14)
-        holder.tvName6.text=List[position].tv6
+        holder.imageview1.setImageResource(list[position].iv1)
+        holder.tvName.text=list[position].tv1
+      //  holder.imageview2.setImageResource(list[position].iv2)
+        holder.imageview3.setImageResource(list[position].iv3)
+        /*holder.imageview4.setImageResource(list[position].iv4)
+        holder.imageview5.setImageResource(list[position].iv5)
+        holder.imageview6.setImageResource(list[position].iv6)
+        holder.imageview7.setImageResource(list[position].iv7)*/
+        holder.imageview8.setImageResource(list[position].iv8)
+        holder.imageview9.setImageResource(list[position].iv9)
+        holder.imageview10.setImageResource(list[position].iv10)
+        holder.tvName2.text=list[position].tv2
+        holder.tvName3.text=list[position].tv3
+        holder.tvName4.text=list[position].tv4
+        holder.imageview11.setImageResource(list[position].iv11)
+        holder.tvName5.text=list[position].tv5
+        holder.imageview12.setImageResource(list[position].iv12)
+        holder.imageview13.setImageResource(list[position].iv13)
+        holder.imageview14.setImageResource(list[position].iv14)
+        holder.tvName6.text=list[position].tv6
 
 
 
@@ -44,7 +44,7 @@ class ContentAdapter(private var List: List<ContentItem>):
     }
 
     override fun getItemCount(): Int {
-        return List.size
+        return list.size
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

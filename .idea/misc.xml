@@ -3,19 +3,46 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.3271794871794872" />
         <entry key="app/src/main/res/drawable-v24/bg_dashboard.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/drawable-v24/bg_gray.xml" value="0.3282051282051282" />
+        <entry key="app/src/main/res/drawable-v24/bg_lightgra_btny.xml" value="0.3282051282051282" />
+        <entry key="app/src/main/res/drawable-v24/bg_lightgray.xml" value="0.3282051282051282" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/drawable/add_circle.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/drawable/bg_circle_green.xml" value="0.3282051282051282" />
         <entry key="app/src/main/res/drawable/bg_login.xml" value="0.34322916666666664" />
         <entry key="app/src/main/res/drawable/bg_rectangle_corner.xml" value="0.33794871794871795" />
+        <entry key="app/src/main/res/drawable/bg_red.xml" value="0.28802083333333334" />
+        <entry key="app/src/main/res/drawable/check.xml" value="0.28802083333333334" />
+        <entry key="app/src/main/res/drawable/gradient_circle.xml" value="0.28802083333333334" />
         <entry key="app/src/main/res/drawable/home.xml" value="0.35885416666666664" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.34322916666666664" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.34322916666666664" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.3140625" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.1497764530551416" />
+        <entry key="app/src/main/res/layout/activity_firebase.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.34270833333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/activity_messanger.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.3140625" />
         <entry key="app/src/main/res/layout/bottom_navmenu.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/constraint_layout2.xml" value="0.3171875" />
+        <entry key="app/src/main/res/layout/constraintlayout.xml" value="0.3171875" />
         <entry key="app/src/main/res/layout/content_item.xml" value="0.34270833333333334" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1741662255161461" />
+        <entry key="app/src/main/res/layout/fragment_likes.xml" value="0.3140625" />
+        <entry key="app/src/main/res/layout/fragment_msg_request.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3140625" />
+        <entry key="app/src/main/res/layout/fragment_reels.xml" value="0.3140625" />
+        <entry key="app/src/main/res/layout/fragment_rooms.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.28541666666666665" />
+        <entry key="app/src/main/res/layout/item_content_home.xml" value="0.34270833333333334" />
+        <entry key="app/src/main/res/layout/item_msgreq_likes.xml" value="0.271875" />
+        <entry key="app/src/main/res/layout/item_story_home.xml" value="0.34270833333333334" />
         <entry key="app/src/main/res/layout/story_item.xml" value="0.34270833333333334" />
         <entry key="app/src/main/res/menu/bottom_navmenu.xml" value="0.15729166666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1734375" />

@@ -3,15 +3,10 @@ package com.example.instagram.base
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.provider.MediaStore
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.instagram.R
-import com.example.instagram.ui.LoginActivity
+import com.example.instagram.LoginActivity
 import java.util.*
 
 

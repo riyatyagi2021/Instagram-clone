@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent">
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/ivArrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:layout_constraintStart_toStartOf="@+id/parent"
+    app:layout_constraintTop_toTopOf="@+id/parent"
+    android:src="@drawable/arrow"
+    android:padding="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:background="@drawable/bg_circle_green"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Business Address"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvBA"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        android:textColor="@color/color_green"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:text="3-04"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWhere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvBA"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:text="Where is your business located?"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvthis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvWhere"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:alpha="0.6"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:text="This will help consumers to locate\n you on the map "/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvpostCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvthis"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Post Code"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etpostCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvpostCode"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_lightgray"
+     android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="251310"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etpostCode"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Address Line 1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etAL1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAL1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"
+        android:background="@drawable/bg_lightgray"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Delhi"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etAL1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="AddressLine 2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etAL2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAL2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_lightgray"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Muzaffarnagar"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etAL2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="City"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:background="@drawable/bg_lightgray"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="NOIDA"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etCity"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Country"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountry"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:background="@drawable/bg_lightgray"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:alpha="0.6"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="LONDON"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/etCountry"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/color_black"
+        android:background="@drawable/bg_lightgra_btny"
+        android:backgroundTint="@color/color_green"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="Next"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

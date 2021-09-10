@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivrequestedUser"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvrequestedUser"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="someone"
+        android:textColor="@color/color_black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Confirm"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="Delete"/>
+
+</LinearLayout>
