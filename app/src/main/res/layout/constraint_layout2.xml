@@ -55,12 +55,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvcash"
-        android:text="Rs 200"
+        android:text="Rs 2000.00"
+        android:textStyle="bold"
         android:textSize="@dimen/_15sdp"
         android:textColor="@color/color_black"
         app:layout_constraintRight_toRightOf="@+id/main"
         app:layout_constraintLeft_toLeftOf="@+id/main"
         android:layout_marginTop="@dimen/_10sdp" />
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvRsSymbol"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="@+id/main"
+    app:layout_constraintTop_toBottomOf="@+id/tvPaise"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:text="Rs"
+    android:textSize="@dimen/_15sdp"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/bg_rect_maroon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddingAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="25"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tvRsSymbol"
+        app:layout_constraintRight_toRightOf="@+id/main"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/tvRsSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/tvPaise" />
 
 
 
